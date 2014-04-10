@@ -47,8 +47,8 @@ The `grails.converters.JSON` converter seems to flake out rather quickly and rel
 back and forth between it and the custom marshallers.  To reproduce this behavior, simply fire up
 POSTman (or your favorite REST URL exerciser) and iterate back 'n forth between the following two endpoints:
 
-[http://localhost:8080/testappJsonConverter/rest/people]
-[http://localhost:8080/testappJsonConverter/rest/jsondata]
+[http://localhost:8080/testappJsonConverter/rest/people](http://localhost:8080/testappJsonConverter/rest/people)
+[http://localhost:8080/testappJsonConverter/rest/jsondata](http://localhost:8080/testappJsonConverter/rest/jsondata)
 
 You should, within a few iterations, encounter the following error:
 
