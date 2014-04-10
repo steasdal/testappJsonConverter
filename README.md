@@ -70,8 +70,6 @@ Message: Unconvertable Object of class: java.util.LinkedHashMap
 
 Here's a short video demonstration of this anomalous behavior:
 
-<center>
-    <a href="http://www.youtube.com/watch?feature=player_embedded&v=oMXyhNCqyn4"
-       target="_blank"><img src="http://img.youtube.com/vi/oMXyhNCqyn4/0.jpg"
-       alt="testappJsonConverter demo video" width="480" height="360" border="10" /></a>
-</center>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=oMXyhNCqyn4"
+   target="_blank"><img src="http://img.youtube.com/vi/oMXyhNCqyn4/0.jpg"
+   alt="testappJsonConverter demo video" width="480" height="360" border="10" /></a>
