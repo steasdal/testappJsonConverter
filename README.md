@@ -44,13 +44,30 @@ def list() {
 ```
 
 The `grails.converters.JSON` converter seems to flake out rather quickly and reliably when switching
-back and forth between it and the custom marshallers.
+back and forth between it and the custom marshallers.  To reproduce this behavior, simply fire up
+POSTman (or your favorite REST URL exerciser) and iterate back 'n forth between the following two endpoints:
 
+http://localhost:8080/testappJsonConverter/rest/people
+http://localhost:8080/testappJsonConverter/rest/jsondata
 
+You should, within a few iterations, encounter the following error:
 
+```
+Unconvertable Object of class: java.util.LinkedHashMap. Stacktrace follows:
+Message: Unconvertable Object of class: java.util.LinkedHashMap
+    Line | Method
+->>  199 | value     in grails.converters.JSON
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+|    133 | render    in     &#39;&#39;
+|    149 | render .  in     &#39;&#39;
+|     26 | list      in JsonDataController.groovy
+|    200 | doFilter  in PageFragmentCachingFilter.java
+|     63 | doFilter  in AbstractFilter.java
+|   1145 | runWorker in java.util.concurrent.ThreadPoolExecutor
+|    615 | run       in java.util.concurrent.ThreadPoolExecutor$Worker
+^    724 | run . . . in java.lang.Thread
+```
 
-
-
-
-
-
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=oMXyhNCqyn4"
+   target="_blank"><img src="http://img.youtube.com/vi/oMXyhNCqyn4/0.jpg"
+   alt="testappJsonConverter demo video" width="240" height="180" border="10" /></a>
