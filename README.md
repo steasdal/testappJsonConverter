@@ -68,6 +68,10 @@ Message: Unconvertable Object of class: java.util.LinkedHashMap
 ^    724 | run . . . in java.lang.Thread
 ```
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=oMXyhNCqyn4"
-   target="_blank"><img src="http://img.youtube.com/vi/oMXyhNCqyn4/0.jpg"
-   alt="testappJsonConverter demo video" width="240" height="180" border="10" /></a>
+Here's a short video demonstration of this anomalous behavior:
+
+<center>
+    <a href="http://www.youtube.com/watch?feature=player_embedded&v=oMXyhNCqyn4"
+       target="_blank"><img src="http://img.youtube.com/vi/oMXyhNCqyn4/0.jpg"
+       alt="testappJsonConverter demo video" width="480" height="360" border="10" /></a>
+</center>
